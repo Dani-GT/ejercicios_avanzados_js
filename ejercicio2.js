@@ -32,3 +32,17 @@ const users = [
       },
     },
   ];
+
+  let totalVolume = 0;
+  let count = 0;
+
+for (const user of users) {
+  const favoriteSounds = user.favoritesSounds;
+  for (const sound in favoriteSounds) {
+    totalVolume += favoriteSounds[sound].volume;
+    count++;
+  }
+}
+
+const averageVolume = totalVolume / count;
+console.log(`La media del volumen es: ${averageVolume}`);
