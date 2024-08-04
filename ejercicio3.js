@@ -32,3 +32,18 @@ const users = [
       },
     },
   ];
+
+  const listSounds = {};
+  
+  for (const user of users) {
+    const favoritesSounds = user.favoritesSounds;
+    for (const sound in favoritesSounds) {
+      if(listSounds[sound]){
+        listSounds[sound] ++;
+      } else {
+        listSounds [sound] = 1;
+      }
+      } 
+    }
+     console.log(listSounds)
+  
