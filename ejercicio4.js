@@ -1,10 +1,6 @@
 
 //4.1
 
-function findArrayIndex(array, text) {
-    //Tu codigo
-}
-
 const mainCharacters = [
   "Luke",
   "Leia",
@@ -14,6 +10,20 @@ const mainCharacters = [
   "Anakin",
   "Obi-Wan",
 ];
+
+function findArrayIndex(mainCharacters, text) {
+
+    for (let i = 0; i < mainCharacters.length; i++) {
+        if (mainCharacters[i] === text) {
+            return i;
+        }
+    }
+    return -1;
+}
+let posicion = findArrayIndex(mainCharacters, "Anakin");
+console.log(posicion);
+
+
 
 
 
