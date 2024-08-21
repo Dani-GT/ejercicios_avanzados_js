@@ -1,3 +1,5 @@
+// Dado el siguiente código usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
+// Es decir, la media de volumen de todos los volumenes juntos.
 const users = [
     {
       name: "Alberto",
